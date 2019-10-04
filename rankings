@@ -1,0 +1,384 @@
+povertyRateFile = 'C:\Users\aeichhorn01\Downloads\PovertyRate2011-2016.xlsx';
+medianIncomeFile = 'C:\Users\aeichhorn01\Downloads\MedianIncome2011-2016.xlsx';
+survey2012file = 'C:\Users\aeichhorn01\Downloads\survey2012.xlsx';
+survey1314file = 'C:\Users\aeichhorn01\Downloads\survey2014-2013.xlsx';
+survey1516file = 'C:\Users\aeichhorn01\Downloads\survey2016-2015.xlsx';
+
+[junk, states] = xlsread(survey2012file, 1, 'A8:A58');
+
+disp("2012");
+
+disp("Marujuana");
+
+%year 2012, age under 12, drug marujuana
+disp("Age 12 and older ");
+rank(survey2012file, 1, 'B8:B58', states);
+
+%year 2012, age 12-17, drug marujuana
+disp("Age 12-17 ");
+rank(survey2012file, 1, 'H8:H58', states);
+
+%year 2012, age 18-25, drug marujuana
+disp("Age 17-25 ");
+rank(survey2012file, 1, 'N8:N58', states);
+
+%year 2012, age 26+, drug marujuana
+disp("Age 26+ ");
+rank(survey2012file, 1, 'T8:T58', states);
+
+disp("Cocaine");
+
+%year 2012, age under 12, drug cocaine
+disp("Age 12 and older ");
+rank(survey2012file, 2, 'A8:B58', states);
+
+%year 2012, age 12-17, drug cocaine
+disp("Age 12-25 ");
+rank(survey2012file, 2, 'H8:H58', states);
+
+%year 2012, age 18-25, drug cocaine
+disp("Age 17-25 ");
+rank(survey2012file, 2, 'N8:N58', states);
+
+%year 2012, age 26+, drug cocaine
+disp("Age 26+ ");
+rank(survey2012file, 2, 'T8:T58', states);
+
+disp("Pain Reliever");
+
+%year 2012, age under 12, drug pain reliever
+disp("Age 12 and older ");
+rank(survey2012file, 3, 'A8:B58', states);
+
+%year 2012, age 12-17, drug pain reliever
+disp("Age 12-25 ");
+rank(survey2012file, 3, 'H8:H58', states);
+
+%year 2012, age 18-25, drug pain reliever
+disp("Age 17-25 ");
+rank(survey2012file, 3, 'N8:N58', states);
+
+%year 2012, age 26+, drug pain reliever
+disp("Age 26+ ");
+rank(survey2012file, 3, 'T8:T58', states);
+
+disp("Alcohol Use Dependency");
+
+%year 2012, age under 12, drug Alcohol
+disp("Age 12 and older ");
+rank(survey2012file, 4, 'A8:B58', states);
+
+%year 2012, age 12-17, drug Alcohol
+disp("Age 12-25 ");
+rank(survey2012file, 4, 'H8:H58', states);
+
+%year 2012, age 18-25, drug Alcohol
+disp("Age 17-25 ");
+rank(survey2012file, 4, 'N8:N58', states);
+
+%year 2012, age 26+, drug Alcohol
+disp("Age 26+ ");
+rank(survey2012file, 4, 'T8:T58', states);
+
+disp("Illicit Drug Dependency");
+
+%year 2012, age under 12, drug Illicit Drug
+disp("Age 12 and older ");
+rank(survey2012file, 5, 'A8:B58', states);
+
+%year 2012, age 12-17, drug Illicit Drug
+disp("Age 12-25 ");
+rank(survey2012file, 5, 'H8:H58', states);
+
+%year 2012, age 18-25, drug Illicit Drug
+disp("Age 17-25 ");
+rank(survey2012file, 5, 'N8:N58', states);
+
+%year 2012, age 26+, drug Illicit Drug
+disp("Age 26+ ");
+rank(survey2012file, 5, 'T8:T58', states);
+
+disp("Substance Use Disorder");
+
+%year 2012, age under 12, Substance Use
+disp("Age 12 and older ");
+rank(survey2012file, 6, 'A8:B58', states);
+
+%year 2012, age 12-17, Substance Use
+disp("Age 12-25 ");
+rank(survey2012file, 6, 'H8:H58', states);
+
+%year 2012, age 18-25, Substance Use
+disp("Age 17-25 ");
+rank(survey2012file, 6, 'N8:N58', states);
+
+%year 2012, age 26+, Substance Use
+disp("Age 26+ ");
+rank(survey2012file, 6, 'T8:T58', states);
+
+disp("2013-2014");
+
+disp("Marujuana");
+
+%year 2013-2014, age under 12, drug marujuana
+disp("Age 12 and older ");
+rank(survey1314file, 1, 'B8:B58', states);
+
+%year 2013-2014, age 12-17, drug marujuana
+disp("Age 12-17 ");
+rank(survey1314file, 1, 'H8:H58', states);
+
+%year 2013-2014, age 18-25, drug marujuana
+disp("Age 17-25 ");
+rank(survey1314file, 1, 'N8:N58', states);
+
+%year 2013-2014, age 26+, drug marujuana
+disp("Age 26+ ");
+rank(survey1314file, 1, 'T8:T58', states);
+
+disp("Cocaine");
+
+%year 2013-2014, age under 12, drug cocaine
+disp("Age 12 and older ");
+rank(survey1314file, 2, 'B8:B58', states);
+
+%year 2013-2014, age 12-17, drug cocaine
+disp("Age 12-17 ");
+rank(survey1314file, 2, 'H8:H58', states);
+
+%year 2013-2014, age 18-25, drug cocaine
+disp("Age 18-25 ");
+rank(survey1314file, 2, 'N8:N58', states);
+
+%year 2013-2014, age 26+, drug cocaine
+disp("Age 26+ ");
+rank(survey1314file, 2, 'T8:T58', states);
+
+disp("Pain Reliever");
+
+%year 2013-2014, age under 12, drug pain reliever
+disp("Age 12 and older ");
+rank(survey1314file, 3, 'B8:B58', states);
+
+%year 2013-2014, age 12-17, drug pain reliever
+disp("Age 12-17 ");
+rank(survey1314file, 3, 'H8:H58', states);
+
+%year 2013-2014, age 18-25, drug pain reliever
+disp("Age 18-25 ");
+rank(survey1314file, 3, 'N8:N58', states);
+
+%year 2013-2014, age 26+, drug pain reliever
+disp("Age 26+ ");
+rank(survey1314file, 3, 'T8:T58', states);
+
+disp("Alcohol Use Dependency");
+
+%year 2013-2014, age under 12, drug Alcohol
+states50 = states(1:50);
+disp("Age 12 and older ");
+rank(survey1314file, 4, 'B8:B57', states50);
+
+%year 2013-2014, age 12-17, drug Alcohol
+disp("Age 12-17 ");
+rank(survey1314file, 4, 'H8:H57', states50);
+
+%year 2013-2014, age 18-25, drug Alcohol
+disp("Age 18-25 ");
+rank(survey1314file, 4, 'N8:N57', states50);
+
+%year 2013-2014, age 26+, drug Alcohol
+disp("Age 26+ ");
+rank(survey1314file, 4, 'T8:T57', states50);
+
+disp("Illicit Drug Dependency");
+
+%year 2013-2014, age under 12, drug Illicit Drug
+states49 = states(1:49);
+disp("Age 12 and older ");
+rank(survey1314file, 5, 'B8:B56', states49);
+
+%year 2013-2014, age 12-17, drug Illicit Drug
+disp("Age 12-18 ");
+rank(survey1314file, 5, 'H8:H56', states49);
+
+%year 2013-2014, age 18-25, drug Illicit Drug
+disp("Age 18-25 ");
+rank(survey1314file, 5, 'N8:N56', states49);
+
+%year 2013-2014, age 26+, drug Illicit Drug
+disp("Age 26+ ");
+rank(survey1314file, 5, 'T8:T56', states49);
+
+disp("Substance Use Disorder");
+
+%year 2013-2014, age under 12, Substance Use
+disp("Age 12 and older ");
+rank(survey1314file, 6, 'B8:B56', states49);
+
+%year 2013-2014, age 12-17, Substance Use
+disp("Age 12-17 ");
+rank(survey1314file, 6, 'H8:H56', states49);
+
+%year 2013-2014, age 18-25, Substance Use
+disp("Age 18-25 ");
+rank(survey1314file, 6, 'N8:N56', states49);
+
+%year 2013-2014, age 26+, Substance Use
+disp("Age 26+ ");
+rank(survey1314file, 6, 'T8:T56', states49);
+
+disp("2015-2016");
+
+disp("Marujuana");
+
+%year 2015-2016, age under 12, drug marujuana
+disp("Age 12 and older ");
+rank(survey1516file, 1, 'B8:B58', states);
+
+%year 2015-2016, age 12-17, drug marujuana
+disp("Age 12-17 ");
+rank(survey1516file, 1, 'H8:H58', states);
+
+%year 2015-2016, age 18-25, drug marujuana
+disp("Age 17-25 ");
+rank(survey1516file, 1, 'P8:P58', states);
+
+%year 2015-2016, age 26+, drug marujuana
+disp("Age 26+ ");
+rank(survey1516file, 1, 'V8:V58', states);
+
+disp("Cocaine");
+
+%year 2015-2016, age under 12, drug cocaine
+disp("Age 12 and older ");
+rank(survey1516file, 2, 'B8:B58', states);
+
+%year 2015-2016, age 12-17, drug cocaine
+disp("Age 12-17 ");
+rank(survey1516file, 2, 'H8:H58', states);
+
+%year 2015-2016, age 18-25, drug cocaine
+disp("Age 18-25 ");
+rank(survey1516file, 2, 'P8:P58', states);
+
+%year 2015-2016, age 26+, drug cocaine
+disp("Age 26+ ");
+rank(survey1516file, 2, 'V8:V58', states);
+
+disp("Heroin");
+
+%year 2015-2016, age under 12, drug Heroin
+disp("Age 12 and older ");
+rank(survey1516file, 3, 'B8:B58', states);
+
+%year 2015-2016, age 12-17, drug Heroin
+disp("Age 12-17 ");
+rank(survey1516file, 3, 'H8:H58', states);
+
+%year 2015-2016, age 18-25, drug Heroin
+disp("Age 18-25 ");
+rank(survey1516file, 3, 'P8:P58', states);
+
+%year 2015-2016, age 26+, drug Heroin
+disp("Age 26+ ");
+rank(survey1516file, 3, 'V8:V58', states);
+
+disp("Pain Reliever");
+
+%year 2015-2016, age under 12, drug pain reliever
+disp("Age 12 and older ");
+rank(survey1516file, 4, 'B8:B58', states49);
+
+%year 2013-2014, age 12-17, drug pain reliever
+disp("Age 12-17 ");
+rank(survey1516file, 4, 'H8:H58', states49);
+
+%year 2015-2016, age 18-25, drug pain reliever
+disp("Age 18-25 ");
+rank(survey1516file, 4, 'P8:P58', states49);
+
+%year 2015-2016, age 26+, drug pain reliever
+disp("Age 26+ ");
+rank(survey1516file, 4, 'V8:V58', states49);
+
+disp("Illicit Drug Dependency");
+
+%year 2015-2016, age under 12, drug Illicit Drug
+disp("Age 12 and older ");
+rank(survey1516file, 5, 'B8:B58', states49);
+
+%year 2015-2016, age 12-17, drug Illicit Drug
+disp("Age 12-17 ");
+rank(survey1516file, 5, 'H8:H58', states49);
+
+%year 2015-2016, age 18-25, drug Illicit Drug
+disp("Age 18-25 ");
+rank(survey1516file, 5, 'P8:P58', states49);
+
+%year 2015-2016, age 26+, drug Illicit Drug
+disp("Age 26+ ");
+rank(survey1516file, 5, 'V8:V58', states49);
+
+disp("Pain Reliever Use Disorder");
+
+%year 2015-2016, age under 12, drug Pain Reliever Use
+states48 = states(1:48);
+disp("Age 12 and older ");
+rank(survey1516file, 6, 'B8:B58', states48);
+
+%year 2015-2016, age 12-17, drug Pain Reliever Use
+disp("Age 12-18 ");
+rank(survey1516file, 6, 'H8:H58', states48);
+
+%year 2015-2016, age 18-25, drug Pain Reliever Use
+disp("Age 18-25 ");
+rank(survey1516file, 6, 'P8:P58', states48);
+
+%year 2015-2016, age 26+, drug Pain Reliever Use
+disp("Age 26+ ");
+rank(survey1516file, 6, 'V8:V58', states48);
+
+disp("Alcohol Use Disorder");
+
+%year 2015-2016, age under 12, drug Alcohol
+disp("Age 12 and older ");
+rank(survey1516file, 7, 'B8:B58', states50);
+
+%year 2015-2016, age 12-17, drug Alcohol
+disp("Age 12-17 ");
+rank(survey1516file, 7, 'H8:H58', states50);
+
+%year 2013-2014, age 18-25, drug Alcohol
+disp("Age 18-25 ");
+rank(survey1516file, 7, 'P8:P58', states50);
+
+%year 2015-2016, age 26+, drug Alcohol
+disp("Age 26+ ");
+rank(survey1516file, 7, 'V8:V58', states50);
+
+disp("Substance Use Disorder");
+
+%year 2015-2016, age under 12, Substance Use
+disp("Age 12 and older ");
+rank(survey1516file, 8, 'B8:B58', states49);
+
+%year 2015-2016, age 12-17, Substance Use
+disp("Age 12-17 ");
+rank(survey1516file, 8, 'H8:H58', states49);
+
+%year 2013-2014, age 18-25, Substance Use
+disp("Age 18-25 ");
+rank(survey1516file, 8, 'P8:P58', states49);
+
+%year 2015-2016, age 26+, Substance Use
+disp("Age 26+ ");
+rank(survey1516file, 8, 'V8:V58', states49);
+
+function order = rank(filename, sheet, range, states)
+drugyearage = xlsread(filename, sheet, range);
+drugyearatestate = [states, strcat({' '}, num2str(drugyearage))];
+order = sortrows(drugyearatestate, 2, 'descend');
+disp(order(1:10, :));
+end
+
